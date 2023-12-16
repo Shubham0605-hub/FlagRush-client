@@ -25,7 +25,7 @@ const Social = () => {
       };
 
       const { data } = await axios.get(
-        `http://localhost:5000/api/v1/users?search=${search}`,
+        `https://backend-server-3w4p.onrender.com/api/v1/users?search=${search}`,
         config
       );
       setSearchResult(data.users);
